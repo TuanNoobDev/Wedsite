@@ -76,7 +76,7 @@
                         <img src="https://th.bing.com/th/id/R.ab0f43df535547aa248109a11171be0d?rik=SGYleDb11OTL6Q&pid=ImgRaw&r=0" alt="">
                         <div class="text">Snake Game</div>
                         <p>Mô tả: Chơi Game rắn sắn mồi, với một đồ họa đơn giản</p>
-                        <a href="#" target="_blank" class="btn">Xem</a>    
+                        <a href="https://tuannoobdev.github.io/Snake-Game/" target="_blank" class="btn">Xem</a>    
                     </div>
                 </div>
                 <div class="card">
@@ -84,23 +84,7 @@
                         <img src="https://png.pngtree.com/element_origin_min_pic/16/10/03/2157f25f1bc3700.jpg" alt="">
                         <div class="text">Time</div>
                         <p>Mô tả: Còn chính xác bao nhiêu lâu nữa thì tết nhỉ ?</p>
-                        <a href="#" target="_blank" class="btn">Xem</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="https://th.bing.com/th/id/R.f6f828dc4cbf6528a085d378f91ece18?rik=fGp51Z4a%2fPRpWg&riu=http%3a%2f%2fpluspng.com%2fimg-png%2ffacebook-messenger-png-facebook-messenger-icon-1600.png&ehk=y9mZbp0FymVzct89Gh9caZFNCQtNYbX%2fh1y5xpEvTtw%3d&risl=&pid=ImgRaw&r=0" alt="">
-                        <div class="text">Chat</div>
-                        <p>Mô tả: Nhắn tin cùng một con Robot, đã được để tin nhắn sẵn</p>
-                        <a href="#" target="_blank" class="btn">Xem</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="" alt="">
-                        <div class="text">Code</div>
-                        <p>Mô tả: Code bằng một app với giao diện đơn giản</p>
-                        <a href="#" target="_blank" class="btn">Xem</a>
+                        <a href="https://tuannoobdev.github.io/Time/" target="_blank" class="btn">Xem</a>
                     </div>
                 </div>
             </div>
@@ -113,7 +97,7 @@
             <h2 class="title">Kĩ Năng Của Tôi</h2>
             <div class="skills-content">
                 <div class="column left">
-                    <div class="text">Ý Kiến Của Tôi.</div>
+                    <div class="text"></div>
                     <p>Khởi Đầu Của Sự Thất Bại :V</p> 
                 </div>
                 <div class="column right">
@@ -206,7 +190,7 @@
             <div class="contact-content">
                 <div class="column left">
                     <div class="text2">TuanNoobDev</div><h1>Said</h1>
-                    <p>Nếu bạn có thắc mắc gì, hay yêu cầu một cái gì đó hãy báo cáo cho mình nhé !!</p>
+                    <p>Yêu cầu gì cũng được!!</p>
                     <div class="icons">
                         <div class="row">
                             <i class="fas fa-user"></i>
@@ -263,7 +247,24 @@
         <div class="text-2"><span class="typing-6"></span></div>
         <span>Được Phát Hành Bởi <a target="_blank" href="https://www.youtube.com/watch?v=mCdA4bJAGGk">TuanNoobDev</a> | <span class="far fa-copyright"></span> 2023 Đã Đăng Kí Bản Quyền.</span>   
     </footer>
-    
+    <script>
+        var nhacList = ["nhacList/nhacnen1.mp3", "nhacList/nhacnen2.mp3", "nhacList/nhacnen3.mp3"];
+  
+        // Hàm để chạy nhạc nền
+        function chayNhac() {
+          var nhac = nhacList[Math.floor(Math.random() * nhacList.length)];
+          var audio = new Audio(nhac);
+          audio.addEventListener('ended', function() {
+            chayNhac();
+          });
+          audio.play();
+        }
+  
+        // Chạy mã khi trình duyệt đã tải xong
+        window.onload = function() {
+          chayNhac();
+        };
+      </script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -77,7 +77,7 @@ $(document).ready(function(){
     });
 
     var typed = new Typed(".typing-7", {
-        strings: ["Hiện tại các dự án sẽ không thể xem.", "Soure code các dự án sẽ sớm được thêm vào."],
+        strings: ["Đây chỉ là một số dự án nhỏ và có một số cái vẫn chưa hoàn thành.", "Truy cập tài khoản Github của mình để lấy Soure Code Nhé."],
         typeSpeed: 100,
         backSpeed: 45,
         loop: true

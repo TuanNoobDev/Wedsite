@@ -798,11 +798,3 @@ footer span a:hover{
     transition: 0.5s;
 
 }
-.btn2:active{
-    box-shadow: 
-        0 0px 0 #0005,
-        0 0px 0 #BD1360,
-        0 0px 0 7px #fff,
-        0 0 30px 30px #e260ae;
-    transform: translateY(5px);
-}
