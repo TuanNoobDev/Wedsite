@@ -1,4 +1,3 @@
-/*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 *{
@@ -13,7 +12,6 @@ html{
     color: #fff;
 }
 
-/* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -28,7 +26,6 @@ html{
     background: linear-gradient(45deg, #f06, #3cf);;
 }
 
-/* all similar content styling codes */
 section{
     padding: 100px 0;
 }
@@ -80,7 +77,6 @@ section .title::after{
     transform: translateX(-50%);
 }
 
-/* navbar styling */
 .navbar{
     position: fixed;
     width: 100%;
@@ -129,7 +125,6 @@ section .title::after{
     color: #fff;
 }
 
-/* menu btn styling */
 .menu-btn{
     color: #fff;
     font-size: 23px;
@@ -145,7 +140,7 @@ section .title::after{
     bottom: 10px;
     text-align: center;
     line-height: 45px;
-    color: #fff;
+    color: black;
     z-index: 9999;
     font-size: 30px;
     border-radius: 6px;
@@ -165,7 +160,6 @@ section .title::after{
 }
 
 
-/* home section styling */
 .home{
     display: flex;
     background: black;
@@ -216,7 +210,6 @@ section .title::after{
     background: none;
 }
 
-/* about section styling */
 .about .title::after{
     content: "Bạn Nghĩ Như Nào ?";
 }
@@ -260,7 +253,6 @@ section .title::after{
     background: none;
 }
 
-/* services section styling */
 .services, .teams{
     color:#fff;
     background: #111;
@@ -304,8 +296,6 @@ section .title::after{
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-
-/* skills section styling */
 
 .skills .title::after{
     content: "Có thể sai hoặc đúng nhé :)";
@@ -383,7 +373,6 @@ section .title::after{
   width: 1%;
 }
 
-/* teams section styling */
 .teams .title::after{
     content: "";
 }
@@ -446,7 +435,6 @@ section .title::after{
     background: crimson!important;
 }
 
-/* hon */
 .text-1 {
   color: #fff;
   font-size: 25px;
@@ -463,7 +451,6 @@ section .title::after{
   color: #0c1022;
 }
 
-/* contact section styling */
 .contact .title::after{
     content: "Ý Kiến Của Bạn!";
 }
@@ -558,7 +545,7 @@ section .title::after{
   color: crimson;
   background: none;
 }
-/* footer section styling */
+
 footer{
     background: #111;
     padding: 15px 23px;
@@ -573,8 +560,6 @@ footer span a:hover{
     text-decoration: underline;
 }
 
-
-/* responsive media query start */
 @media (max-width: 1104px) {
     .about .about-content .left img{
         height: 350px;
@@ -748,7 +733,6 @@ footer span a:hover{
     transform: scale(0);
 }
 
-
 .btn{
     padding: 5px 20px;
     border: 1px solid #b21065;
@@ -778,23 +762,44 @@ footer span a:hover{
     transform: translateY(5px);
 }
 
-.btn2{
-    padding: 5px 20px;
-    border: 1px solid #b21065;
-    border-radius: 20px;
-    background-image: 
-        linear-gradient(to bottom, #fff9, transparent 50% 90%, #f5cbbc99), 
-        repeating-linear-gradient(60deg,#bc058255 0 10px, transparent 10px 20px),
-        linear-gradient(to bottom, #EF08A6, #ee6c8f);
-    color: #fff;
-    font-family: monospace;
-    font-weight: bold;
-    text-shadow: 0 1px 0 #efb7de;
-    box-shadow: 
-        0 10px 0 #0005,
-        0 5px 0 #BD1360,
-        0 4px 0 7px #fff,
-        0 0 30px 10px #e260ae;
-    transition: 0.5s;
-
+.btn2 {
+    background-color: linear-gradient(45deg, #f06, #3cf);
+    color: black;
+    font-size: 18px;
+    border: none;
+    padding: 2px 2px;
+    cursor: pointer;
+    position: absolute;
+    top: 90%; 
+    left: 15%; 
+    transform: translate(-50%, -50%); 
 }
+
+#button {
+    position: relative;
+    width: 50px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: left 0.3s ease-out;
+}
+
+#circle.on {
+    left: 25px;
+    background-color: blue;
+}
+
+/* Soure Code by TuanNoobDev*/
+/* Github: https://github.com/TuanNoobDev (TuanNoobDev) */
+/* Facebook: https://facebook.com/TuanNoobDev (Ng Anh Tuan) */

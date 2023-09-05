@@ -15,12 +15,15 @@
 
 </head>
 <body>
+
+    <!-- Thanh Công Cụ -->
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
     <nav class="navbar">
         <div class="max-width">
             <div class="logo"><a href="#">Tuan<span>NoobDev</span></a></div>
+
             <ul class="menu">
                 <li><a href="#home" class="menu-btn">Trang Đầu</a></li>
                 <li><a href="#about" class="menu-btn">Thông Tin</a></li>
@@ -30,25 +33,33 @@
                 <li><a href="#hon" class="menu-btn">Định Nghĩa</a></li>
                 <li><a href="#contact" class="menu-btn">Ý Kiến Của Bạn </a></li>
             </ul>
+             <!-- Bật tắt Nhạc Nền-->
+             <div id="button" onclick="toggleMusic()">
+                <div id="circle"></div>
+            </div>
+            <audio id="music" loop>
+                <source src="" type="audio/mpeg">
+            </audio>
+        
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
     </nav>
 
-    <!-- home section start -->
+    <!-- Trang Đầu -->
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
                 <div class="text-1">Xin Chào, Gọi Tôi là</div>
                 <div class="text-2">TuanNoobDev</div>
                 <div class="text-3"><span class="typing"></span></div>
-                <div class="home-sci"></div>             
-        </div>
+                <div class="home-sci"></div>
+            </div>
         </div>
     </section>
 
-    <!-- about section start -->
+    <!-- Về Tôi -->
     <section class="about" id="about">
         <div class="max-width">
             <h2 class="title">Về Tôi</h2>
@@ -65,11 +76,10 @@
         </div>
     </section>
 
-      <!-- teams section start -->
+      <!-- Dự Án -->
       <section class="teams" id="teams">
         <div class="max-width">
             <h2 class="title">Một Số Dự Án</h2>
-            <div class="text-1"><span class="typing-7"></span></div>
             <div class="carousel owl-carousel">
                 <div class="card">
                     <div class="box">
@@ -91,7 +101,7 @@
         </div>
     </section>
 
-     <!-- skills section start -->
+     <!-- Kĩ Năng -->
      <section class="skills" id="skills">
         <div class="max-width">
             <h2 class="title">Kĩ Năng Của Tôi</h2>
@@ -140,10 +150,10 @@
         </div>
     </section>
 
-        <!-- services section start -->
+        <!-- Liên Hệ -->
         <section class="services" id="services">
             <div class="max-width">
-                <h2 class="title">Mạng Xã Hội</h2>
+                <h2 class="title">Kết Nối</h2>
                 <div class="serv-content">
                     <div class="card">
                         <div class="box">
@@ -168,7 +178,6 @@
             </div>
         </section>
 
-
     <!-- Định Nghĩa -->
     <section class="hon" id="hon">
         <div class="max-width">
@@ -183,7 +192,7 @@
             </div>
         </div>
     
-    <!-- contact section start -->
+    <!-- Ý Kiến Của Bạn -->
     <section class="contact" id="contact">
         <div class="max-width">
             <h2 class="title">Đóng góp cho mình</h2>
@@ -228,12 +237,7 @@
                         </div>
 
                         <div class="button-area">
-                            <button onclick="reloadPage()">Gửi</button>
-                            <script>
-                            function reloadPage() {
-                            location.reload();
-                            }
-                            </script>
+                            <button href="#">Hiện Không<br>Thể Gửi</button>
                         </div>
 
                     </form>
@@ -242,29 +246,18 @@
         </div>
     </section>                        
 
-    <!-- footer section start -->
+    <!-- Nguồn -->
     <footer>
         <div class="text-2"><span class="typing-6"></span></div>
         <span>Được Phát Hành Bởi <a target="_blank" href="https://www.youtube.com/watch?v=mCdA4bJAGGk">TuanNoobDev</a> | <span class="far fa-copyright"></span> 2023 Đã Đăng Kí Bản Quyền.</span>   
     </footer>
-    <script>
-        var nhacList = ["nhacList/nhacnen1.mp3", "nhacList/nhacnen2.mp3", "nhacList/nhacnen3.mp3"];
-  
-        // Hàm để chạy nhạc nền
-        function chayNhac() {
-          var nhac = nhacList[Math.floor(Math.random() * nhacList.length)];
-          var audio = new Audio(nhac);
-          audio.addEventListener('ended', function() {
-            chayNhac();
-          });
-          audio.play();
-        }
-  
-        // Chạy mã khi trình duyệt đã tải xong
-        window.onload = function() {
-          chayNhac();
-        };
-      </script>
+
+
     <script src="script.js"></script>
 </body>
 </html>
+
+<!-- Soure Code by TuanNoobDev -->
+<!-- Github: https://github.com/TuanNoobDev (TuanNoobDev) -->
+<!-- Facebook: https://facebook.com/TuanNoobDev (Ng Anh Tuan) -->
+<!-- Ở Một Vài Đoạn Code Sẽ Không Hay Vì Làm Nhanh Bạn Có Thể Sửa Lại Nhé -->
